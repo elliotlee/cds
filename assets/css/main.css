@@ -3124,7 +3124,7 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		padding: 5em 5em 1em 5em ;
+		padding: 0em 5em 0em 5em ;
 		text-align: center;
 	}
 
@@ -3138,8 +3138,8 @@ input, select, textarea {
 		}
 
 		#header.alt {
-			/*padding: 6em 5em 4em 5em ; with main logo */
-			padding: 0em 5em 4em 5em;
+			/*padding: 7em 5em 4em 5em ; with main logo */
+			padding: 0em 5em 0em 5em;
 		}
 
 			#header.alt h1 {
@@ -3171,10 +3171,8 @@ input, select, textarea {
 				margin: 0 0 1.5em 0;
 			}
 			
-			
-
 				#header.alt .logo img {
-					display: block;
+					display: none;
 					margin: 0 auto;
 					max-width: 75%;
 				}
@@ -3182,11 +3180,17 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			#header {
-				padding: 4em 4em 0.1em 4em ;
+				padding: 0em 4em 0em 4em ;
 			}
 
 				#header.alt {
-					padding: 6em 4em 3em 4em ;
+					padding: 0em 4em 0em 4em ;
+				}
+
+					#header.alt .logo img {
+					display: none;
+					margin: 0 auto;
+					max-width: 75%;
 				}
 
 		}
@@ -3194,19 +3198,26 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			#header {
-				padding: 4em 3em 0.1em 3em ;
+				padding: 0em 3em 0.1em 3em ;
 			}
 
 				#header.alt {
-					padding: 5em 3em 2em 3em ;
+					padding: 0em 3em 0em 3em ;
 				}
+
+					#header.alt .logo img {
+					display: none;
+					margin: 0 auto;
+					width: 100%;
+				}
+
 
 		}
 
 		@media screen and (max-width: 736px) {
 
 			#header {
-				padding: 3em 2em 0.1em 2em ;
+				padding: 0em 2em 0em 2em ;
 			}
 
 				#header p {
@@ -3219,12 +3230,18 @@ input, select, textarea {
 					}
 
 				#header.alt {
-					padding: 4em 2em 1em 2em ;
+					padding: 0em 2em 0em 2em ;
 				}
 
 					#header.alt h1 {
 						font-size: 2.5em;
 					}
+
+					#header.alt .logo img {
+					display: block;
+					margin: 0 auto;
+					max-width: 75%;
+				}
 
 		}
 
@@ -3256,7 +3273,7 @@ input, select, textarea {
 			opacity: 0;
 		}
 
-		body.is-preload #header.alt .logo {
+		body.is-preload #header.alt .logo {   /*logosmall*/
 			-moz-transform: scale(0.8) /*rotate(-30deg)*/;
 			-webkit-transform: scale(0.8) /*rotate(-30deg)*/;
 			-ms-transform: scale(0.8) /*rotate(-30deg)*/;
@@ -3383,7 +3400,7 @@ input, select, textarea {
 		#nav.alt {
 			position: fixed;
 			top: 0;
-			padding: 0.2em 1em;
+			padding: 0.5em 1em;
 			background-color: rgba(247, 247, 247, 0.95);
 			border-top-left-radius: 0;
 			border-top-right-radius: 0;
@@ -3394,7 +3411,6 @@ input, select, textarea {
 				margin: 0 0.175em;
 			}
 			
-
 				#nav.alt ul li a {
 					font-size: 0.9em;
 				}
@@ -4511,6 +4527,7 @@ input, select, textarea {
 		transition: -moz-filter 0.5s ease, -webkit-filter 0.5s ease, -ms-filter 0.5s ease, filter 0.5s ease;
 		position: relative;
 		width: 64em;
+		max-width: calc(100% - 4em);
 		margin: 0 auto;
 	}
 
