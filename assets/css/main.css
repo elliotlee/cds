@@ -1,5 +1,7 @@
 @import url(font-awesome.min.css);
 @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400";
+@import url('https://fonts.googleapis.com/css?family=Aleo:300,400');
+@import url('https://fonts.googleapis.com/css?family=Lora:300,400');
 @import url(style.css);
 
 /*
@@ -163,11 +165,11 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #935d8c;
+		background-color: ##cccccc;
 		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), linear-gradient(45deg, #121e3a 15%, #2f4d93 85%);
+		background-image: url("images/overlay.png"), linear-gradient(45deg, #efefef 15%, #e6e6e6 85%);
 		
 		/*
 		background-color: #935d8c;
@@ -251,6 +253,7 @@ input, select, textarea {
 
 	p {
 		margin: 0 0 2em 0;
+		font-size: 110%;
 	}
 
 		p.content {
@@ -280,6 +283,7 @@ input, select, textarea {
 	h1 {
 		font-size: 2.5em;
 		line-height: 1.2;
+
 	}
 
 	h2 {
@@ -387,7 +391,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+		color: #000000;
 	}
 
 
@@ -2307,6 +2311,7 @@ input, select, textarea {
 			display: none;
 		}
 
+
 		.icon.major {
 			border: solid 1px;
 			display: inline-block;
@@ -2419,6 +2424,7 @@ input, select, textarea {
 		border: 0;
 		display: inline-block;
 		position: relative;
+		transition: 0.3s ease;
 	}
 
 		.image img {
@@ -2455,6 +2461,17 @@ input, select, textarea {
 			.image.fit img {
 				width: 100%;
 			}
+
+		.image.grow:hover {
+			-webkit-transform: scale(1.03);
+        	-ms-transform: scale(1.03);
+        	-moz-transform: scale(1.03);
+       	 	transform: scale(1.03);
+       	 	
+       	 	
+		}
+
+
 
 		.image.main {
 			display: block;
@@ -2540,7 +2557,7 @@ input, select, textarea {
 	}
 
 	dl dt {
-		color: #ffffff;    
+		color: #000000;    
 	}
 
 /* Actions */
@@ -2557,9 +2574,26 @@ input, select, textarea {
 	}
 
 		ul.actions li {
-			padding: 0 0 0 1em;
+			padding: 0 0 0 3em;
 			vertical-align: middle;
 		}
+
+		@media screen and (max-width: 980px) {
+			ul.actions li {
+			padding: 0 0 0 5.5em;
+			vertical-align: middle;
+			}
+		}
+
+		@media screen and (max-width: 800px) {
+			ul.actions li {
+			padding: 0 0 0 2.7em;
+			vertical-align: middle;
+			}
+		}
+
+
+
 
 		ul.actions.special {
 			-moz-justify-content: center;
@@ -2690,10 +2724,14 @@ input, select, textarea {
 
 	header.major {
 		margin-bottom: 3em;
+
+
 	}
 
 		header.major h2 {
-			font-size: 2em;
+			font-size: 3em;
+
+
 		}
 
 			header.major h2:after {
@@ -2713,6 +2751,7 @@ input, select, textarea {
 		header.major p {
 			font-size: 1.25em;
 			letter-spacing: -0.025em;
+
 		}
 
 		header.major.special {
@@ -3137,6 +3176,11 @@ input, select, textarea {
 			letter-spacing: -0.025em;
 		}
 
+
+		#header span.logosmall {
+			right: 40em;
+		}
+
 		#header.alt {
 			/*padding: 7em 5em 4em 5em ; with main logo */
 			padding: 0em 5em 0em 5em;
@@ -3311,7 +3355,7 @@ input, select, textarea {
 			-ms-transition-delay: 0s;
 			transition-delay: 0s;
 
-			display: block	;
+			display: block;
 			margin: 0 0 0 0;
 			
 			opacity: 1;
@@ -3388,11 +3432,15 @@ input, select, textarea {
 					box-shadow: inset 0 0 0 1px transparent;
 				}
 
-					#nav ul li a:hover {
-						background-color: rgba(222, 222, 222, 0.25);
+
+
+
+					#nav ul li.navbutton a:hover {
+						background-color: rgba(222, 222, 222, 0.35);
 					}
 
-					#nav ul li a.active {
+
+					#nav ul li.navbutton a.active {
 						background-color: #ffffff;
 						box-shadow: none;
 					}
@@ -3444,7 +3492,7 @@ input, select, textarea {
 		}
 
 		#main strong, #main b {
-			color: #636363;
+			color: #008acc;
 		}
 
 		#main h1, #main h2, #main h3, #main h4, #main h5, #main h6 {
@@ -3641,11 +3689,13 @@ input, select, textarea {
 		}
 
 		#main header.major h2:after {
-			background-color: #dddddd;
+			/*background-color: #dddddd;*/
+			
 			background-image: -moz-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
 			background-image: -webkit-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
 			background-image: -ms-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
 			background-image: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+			
 		}
 
 		#main table tbody tr {
@@ -3837,9 +3887,9 @@ input, select, textarea {
 
 			#gallery .thumb > h2 {
 				pointer-events: none;
-				bottom: 11.3em;
-				font-size: 0.8em;
-				left: 2.1875em;
+				bottom: 6.3em;
+				font-size: 1em;
+				left: 1em;
 				margin: 0;
 				position: absolute;
 				z-index: 1;
@@ -3991,7 +4041,7 @@ input, select, textarea {
 				-webkit-transition-delay: 2.075s;
 				-ms-transition-delay: 2.075s;
 				transition-delay: 2.075s;
-				height: calc(40vh - 2em);
+				height: calc(20vh - 2em);
 				min-height: 20em;
 				width: 33.3333333333%;
 			}
@@ -4068,9 +4118,9 @@ input, select, textarea {
 				-webkit-transition-delay: 1.625s;
 				-ms-transition-delay: 1.625s;
 				transition-delay: 1.625s;
-				height: calc(40vh - 2em);
+				height: calc(20vh - 2em);
 				min-height: 20em;
-				width: 50%;
+				width: 33.33333%;
 			}
 
 				#gallery .thumb:nth-child(1) {
@@ -4126,7 +4176,7 @@ input, select, textarea {
 				transition-delay: 2.075s;
 				height: calc(28.5714285714vh - 1.3333333333em);
 				min-height: 18em;
-				width: 50%;
+				width: 33.333%;
 			}
 
 				#gallery .thumb:nth-child(1) {
@@ -4328,6 +4378,7 @@ input, select, textarea {
 
 			.poptrox-popup .caption h2, .poptrox-popup .caption h3, .poptrox-popup .caption h4, .poptrox-popup .caption h5, .poptrox-popup .caption h6 {
 				margin: 0 0 0.5em 0;
+				color: #ffffff;
 			}
 
 			.poptrox-popup .caption p {
@@ -4425,6 +4476,7 @@ input, select, textarea {
 		padding: 5em 5em 3em 5em ;
 		width: calc(100% + 2em);
 		margin: 0 0 3em -2em;
+		color: #000000;
 	}
 
 		#footer > * {
@@ -4437,7 +4489,7 @@ input, select, textarea {
 			margin: 2.5em 0 2em 0;
 			font-size: 0.8em;
 			text-align: center;
-			color: #2a4584;
+			color: #cccccc;
 		}
 
 		@media screen and (max-width: 1280px) {
