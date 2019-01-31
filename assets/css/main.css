@@ -2497,12 +2497,17 @@ input, select, textarea {
 
 	ul {
 		list-style: disc;
-		margin: 0 0 2em 0;
+		margin: 0 0 0.3em 0;
 		padding-left: 1em;
 	}
 
 		ul li {
 			padding-left: 0.5em;
+		}
+
+		ul li h3{
+			padding-left: 0em;
+			text-align: center;
 		}
 
 		ul.alt {
@@ -2514,6 +2519,7 @@ input, select, textarea {
 				border-top: solid 1px;
 				padding: 0.5em 0;
 			}
+
 
 				ul.alt li:first-child {
 					border-top: 0;
@@ -2815,8 +2821,10 @@ input, select, textarea {
 		}
 
 		table td {
-			padding: 0.75em 0.75em;
+			padding: 0.75em 0.85em;
 		}
+
+
 
 		table th {
 			font-size: 0.9em;
@@ -2824,6 +2832,7 @@ input, select, textarea {
 			padding: 0 0.75em 0.75em 0.75em;
 			text-align: left;
 		}
+
 
 		table thead {
 			border-bottom: solid 2px;
@@ -2905,10 +2914,21 @@ input, select, textarea {
 	}
 
 		.features li {
-			width: calc(33.3333333333% - 2em);
-			margin-left: 2em;
-			margin-top: 3em;
+			width: calc(45% - 2em);
+			margin-left: 2.5em;
+			margin-top: 0.5em;
 			padding: 0;
+		}
+
+		.features ul li {
+			width: 100%;
+			margin-left: 0.5em;
+			margin-top: 0.5em;
+			padding: 0;
+		}
+
+		.features li table {
+			text-align: left;
 		}
 
 			.features li:nth-child(1), .features li:nth-child(2), .features li:nth-child(3) {
@@ -2926,7 +2946,7 @@ input, select, textarea {
 			}
 
 				.features li:nth-child(3) {
-					margin-top: 3em;
+					margin-top: 2em;
 				}
 
 		}
@@ -2941,11 +2961,12 @@ input, select, textarea {
 				.features li {
 					width: 100%;
 					margin-left: 0;
-					margin-top: 2em;
+					margin-top: 1em;
+
 				}
 
 					.features li:nth-child(2), .features li:nth-child(3) {
-						margin-top: 2em;
+						margin-top: 1em;
 					}
 
 		}
@@ -3191,31 +3212,31 @@ input, select, textarea {
 			}
 
 			#header.alt > * {
-				-moz-transition: opacity 3s ease;
+				/*-moz-transition: opacity 3s ease;
 				-webkit-transition: opacity 3s ease;
 				-ms-transition: opacity 3s ease;
 				transition: opacity 3s ease;
 				-moz-transition-delay: 0.5s;
 				-webkit-transition-delay: 0.5s;
 				-ms-transition-delay: 0.5s;
-				transition-delay: 0.5s;
+				transition-delay: 0.5s;*/
 				opacity: 1;
 			}
 
 			#header.alt .logo {
-				-moz-transition: opacity 1.25s ease, -moz-transform 0.5s ease;
+				/*-moz-transition: opacity 1.25s ease, -moz-transform 0.5s ease;
 				-webkit-transition: opacity 1.25s ease, -webkit-transform 0.5s ease;
 				-ms-transition: opacity 1.25s ease, -ms-transform 0.5s ease;
 				transition: opacity 1.25s ease, transform 0.5s ease;
 				-moz-transition-delay: 0s;
 				-webkit-transition-delay: 0s;
 				-ms-transition-delay: 0s;
-				transition-delay: 0s;
+				transition-delay: 0s;*/
 				display: block;
-				margin: 0 0 1.5em 0;
+				margin: 1em 0 1.5em 0;
 			}
 			
-				#header.alt .logo img {
+				#header.alt .logo.main img {
 					display: none;
 					margin: 0 auto;
 					max-width: 75%;
@@ -3232,6 +3253,12 @@ input, select, textarea {
 				}
 
 					#header.alt .logo img {
+					display: block;
+					margin: 0 auto;
+					max-width: 75%;
+				}
+
+					#header.alt .logo.main img {
 					display: none;
 					margin: 0 auto;
 					max-width: 75%;
@@ -3249,7 +3276,7 @@ input, select, textarea {
 					padding: 0em 3em 0em 3em ;
 				}
 
-					#header.alt .logo img {
+					#header.alt .logo.main img {
 					display: none;
 					margin: 0 auto;
 					width: 100%;
@@ -3281,10 +3308,10 @@ input, select, textarea {
 						font-size: 2.5em;
 					}
 
-					#header.alt .logo img {
+					#header.alt .logo.main img {
 					display: block;
 					margin: 0 auto;
-					max-width: 75%;
+					max-width: 100%;
 				}
 
 		}
@@ -3292,11 +3319,11 @@ input, select, textarea {
 		@media screen and (max-width: 480px) {
 
 			#header {
-				padding: 3em 1.5em 0.1em 1.5em ;
+				padding: 1.1em 1em 0.1em 1em ;
 			}
 
 				#header.alt {
-					padding: 4em 1.5em 1em 1.5em ;
+					padding: 1.1em 1em 1em 1em ;
 				}
 
 		}
@@ -3304,11 +3331,11 @@ input, select, textarea {
 		@media screen and (max-width: 360px) {
 
 			#header {
-				padding: 2.5em 1em 0.1em 1em ;
+				padding: 1.1em 1em 0.1em 1em ;
 			}
 
 				#header.alt {
-					padding: 3.5em 1em 0.5em 1em ;
+					padding: 1.1em 1em 0.5em 1em ;
 				}
 
 		}
@@ -3403,7 +3430,7 @@ input, select, textarea {
 			padding: 0;
 			list-style: none;
 			position: relative;
-			right:2.5em;
+			right:0.5em;
 			
 		}
 
@@ -3865,7 +3892,7 @@ input, select, textarea {
 				background-size: cover;
 				content: '';
 				display: block;
-				height: 60%;
+				height: 100%; /*shadow height*/
 				left: 0;
 				position: absolute;
 				top: 0;
@@ -3878,7 +3905,7 @@ input, select, textarea {
 				background-repeat: no-repeat;
 				background-size: cover;
 				border: 0;
-				height: 60%;
+				height: 100%; /*thumbnail height*/
 				left: 0;
 				position: absolute;
 				top: 0;
@@ -3887,13 +3914,27 @@ input, select, textarea {
 
 			#gallery .thumb > h2 {
 				pointer-events: none;
-				bottom: 6.3em;
+				bottom: 1.1em;
 				font-size: 1em;
 				left: 1em;
 				margin: 0;
 				position: absolute;
 				z-index: 1;
 			}
+
+			#gallery .thumb > h2 span {
+				color: white;
+				font: bold 18px/25px Helvetica, sans-serif;
+				letter-spacing: -1px;
+				background: rgb(0,0,0);
+				background: rgba(0,0,0,0.7);
+				padding: 0.14em;
+			}
+
+			/*#gallery .thumb > h2 span.spacer {
+				padding: 0.14em;
+			}*/
+
 
 			#gallery .thumb > p {
 				display: none;
@@ -3946,7 +3987,7 @@ input, select, textarea {
 			-ms-transition-delay: 2.525s;
 			transition-delay: 2.525s;
 			height: calc(40vh - 2em);
-			min-height: 20em;
+			min-height: 16em;
 			width: 25%;
 		}
 
@@ -4041,8 +4082,8 @@ input, select, textarea {
 				-webkit-transition-delay: 2.075s;
 				-ms-transition-delay: 2.075s;
 				transition-delay: 2.075s;
-				height: calc(20vh - 2em);
-				min-height: 20em;
+				height: calc(1em); /*thumb box height*/
+				min-height: 12em;
 				width: 33.3333333333%;
 			}
 
@@ -4119,7 +4160,7 @@ input, select, textarea {
 				-ms-transition-delay: 1.625s;
 				transition-delay: 1.625s;
 				height: calc(20vh - 2em);
-				min-height: 20em;
+				min-height: 12em;
 				width: 33.33333%;
 			}
 
@@ -4175,7 +4216,7 @@ input, select, textarea {
 				-ms-transition-delay: 2.075s;
 				transition-delay: 2.075s;
 				height: calc(28.5714285714vh - 1.3333333333em);
-				min-height: 18em;
+				min-height: 12em;
 				width: 33.333%;
 			}
 
@@ -4252,7 +4293,7 @@ input, select, textarea {
 				-ms-transition-delay: 1.175s;
 				transition-delay: 1.175s;
 				height: calc(40vh - 2em);
-				min-height: 18em;
+				min-height: 12em;
 				width: 100%;
 			}
 
