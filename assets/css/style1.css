@@ -134,6 +134,11 @@ body {
 	font-size: 4em;
 }
 
+#header h1 {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
 .section {
     text-align: center;
 }
@@ -262,7 +267,7 @@ body {
 
    .three-cols .box,
    .four-cols .box {
-        width: 45%;
+        width: 49%;
    }
    .three-cols .box:nth-child(2n+0) {
         margin-right: 0;
@@ -365,4 +370,37 @@ body {
    background-color: #0002;
 }
 
+
+footer {
+   font-family: "Helvetica neue", Helvetica, Arial, sans-serif;
+   text-align: left;
+   color: #000;
+   margin: 1.5rem 2rem;
+}
+
+footer h2 {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+footer dl dt {
+  font-weight: bold;
+}
+
+footer a {
+  color: #000;
+}
+
+footer a:hover {
+  
+  color: #555;
+  -moz-transition: 0.2s ease;
+  -webkit-transition: 0.2s ease;
+  -ms-transition: 0.2s ease;
+  transition: 0.2s ease;
+  font-size: 1.015em;
+
+}
 
