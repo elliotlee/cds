@@ -155,10 +155,9 @@ body {
 .box-container {
     display: inline-block;
     margin-top: 1.4em;
-    margin-left: 2.1em;
-    width: 94%;
-
-
+    margin-left: 2em;
+    margin-right: 2em;
+    width: auto;
 }
 
 .box {
@@ -332,6 +331,14 @@ body {
       text-align: center;
       margin: auto;
    }
+
+   .box-container {
+    display: inline-block;
+    margin-top: 1.4em;
+    margin-left: 2em;
+    margin-right: 0em;
+    width: auto;
+}
 }
 
 
