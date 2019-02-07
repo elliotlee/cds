@@ -266,7 +266,7 @@ body {
 
 @media (max-width: 767px) {
    header {
-      padding: 35px 0 10px 0 !important;
+      padding: 35px 0 20px 0 !important;
    }
 
    .logo a img {
@@ -353,6 +353,8 @@ body {
 }
 
 @media screen and (max-width: 410px) {
+
+
    header h1 {
       font-size: 5rem;
    }
