@@ -395,6 +395,10 @@ footer {
    margin: 1.5rem 2rem;
 }
 
+footer a {
+   text-decoration: underline dotted;
+}
+
 footer h2 {
   border-bottom: 1px solid #ddd;
   padding-bottom: 10px;
@@ -417,7 +421,7 @@ footer a:hover {
   -webkit-transition: 0.2s ease;
   -ms-transition: 0.2s ease;
   transition: 0.2s ease;
-  font-size: 1.015em;
+  font-size: 1.01em;
 
 }
 
