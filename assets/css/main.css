@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Aleo:300,400');
 @import url('https://fonts.googleapis.com/css?family=Lora:300,400');
 @import url(style.css);
+@import url(glightbox.css);
 
 /*
 	Stellar by HTML5 UP
@@ -94,6 +95,8 @@ section, summary, time, mark, audio, video {
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
+
+
 
 body {
 	line-height: 1;
