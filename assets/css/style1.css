@@ -137,23 +137,66 @@ body {
 #header h1 {
   border-bottom: 1px solid #ddd;
   padding-bottom: 10px;
+  margin: auto;
 }
+
+
 
 .section {
     text-align: center;
 }
 
 .wrap {
+  width: 100%;
    max-width: 1100px;
    max-width: 1240px;
-   margin: 0 auto;
+   margin: 1.5em auto;
 }
 
-.logo a img{
-	left: 2em;
-	top: 1em;
+a .logo{
+	left: 0em;
+	top: 0em;
 	position: relative;
 	width: 20em;
+}
+
+
+
+
+.fixed-nav ul {
+   float: right;
+   position: relative;
+   
+}
+
+.fixed-nav ul li {
+   float: left;
+   list-style: none;
+   margin-left: 25px;
+}
+
+.fixed-nav ul li a {
+   color: #2b2b2b;
+   font-weight: 600;
+   font-size: 0.8em;
+}
+
+.intro {
+   width: 100%;
+   margin: 0 auto;
+   margin-top: 7em;
+   background-color: #ccc;
+}
+
+header .big{
+   background: url(images/);
+   background-size: cover;
+   margin-bottom: 0px;
+   height: 100vh;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 
 /*BUTTONS*/
@@ -266,10 +309,11 @@ body {
 
 @media (max-width: 767px) {
    header {
-      padding: 35px 0 20px 0 !important;
+      padding: 5px 0 20px 0 !important;
    }
 
    .logo a img {
+
    		width: 18em;
    }
 
@@ -311,15 +355,19 @@ body {
       padding: 0 27px;
       margin-bottom: 0;
    }
-   .logo {
-       margin-left: 16px;
-   }
 
    header h1 {
        font-size: 5rem;
    }
+
+   .logo {
+      display: block;
+      margin: auto; 
+   }
+
    .fixed-nav ul {
-       display: none;
+       display: block;
+       margin: 1em ;
    }
 
    .box {
@@ -342,15 +390,19 @@ body {
       margin-left: 1.5em;
    }
 
-   div .center {
+   div .buttons {
    	margin: auto;
    }
-
-
-
-
-
 }
+
+
+@media screen and (max-width: 501px) {
+       .fixed-nav ul {
+       display: none;
+       margin: 1em ;
+   }
+}
+
 
 @media screen and (max-width: 410px) {
 
@@ -386,7 +438,8 @@ body {
 
 }
 
-
+   
+   
 
 
 
