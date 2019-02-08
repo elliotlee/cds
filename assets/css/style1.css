@@ -320,7 +320,7 @@ header.big{
 
    .wrap {
         width: 100%;
-        overflow: hidden;
+        /*overflow: hidden;*/
         max-width: 100%;
    }
    .options-list,
