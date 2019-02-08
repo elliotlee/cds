@@ -162,7 +162,6 @@ a .logo{
 
 
 
-
 .fixed-nav ul {
    float: right;
    position: relative;
@@ -304,7 +303,10 @@ header .big{
 }
 
 
-
+@media (max-width: 1275px) {
+  div .fixed-nav {
+  margin: 0.5em;
+}
 
 
 @media (max-width: 767px) {
@@ -396,7 +398,7 @@ header .big{
 }
 
 
-@media screen and (max-width: 501px) {
+@media screen and (max-width: 518px) {
        .fixed-nav ul {
        display: none;
        margin: 1em ;
