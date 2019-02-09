@@ -194,7 +194,7 @@ a .logo{
 }
 
 header.big{
-   background: url(images/IMG_5452.JPG);
+   background: /*url(images/IMG_5452.JPG);*/
    background-size: cover;
    margin-bottom: 0px;
    height: 100vh;
@@ -447,7 +447,26 @@ header.big{
 
 }
 
+body h2 {
+  color:  #21618c;
+  margin: 1em 1.5em 0.5em 0.7em;
+  font-size: 3.5em;
+}
+
+body p {
+  margin: 0em 20em 0.5em 1.8em;
+  font-size: 1.3em;
+}
    
+
+    .image.right {
+      float: right;
+      margin: -3em 5em 1em 2em;
+      top: 0.25em;
+      border-radius: 10px;
+      max-width: 30%;
+    
+    }
 
 
 footer {
