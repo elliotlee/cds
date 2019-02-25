@@ -5,67 +5,67 @@
 @import url(glightbox.css);
 
 @-moz-keyframes spinner {
-	0% {
-		-moz-transform: rotate(0deg);
-		-webkit-transform: rotate(0deg);
-		-ms-transform: rotate(0deg);
-		transform: rotate(0deg);
-	}
+  0% {
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
 
-	100% {
-		-moz-transform: rotate(359deg);
-		-webkit-transform: rotate(359deg);
-		-ms-transform: rotate(359deg);
-		transform: rotate(359deg);
-	}
+  100% {
+    -moz-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    -ms-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
 }
 
 @-webkit-keyframes spinner {
-	0% {
-		-moz-transform: rotate(0deg);
-		-webkit-transform: rotate(0deg);
-		-ms-transform: rotate(0deg);
-		transform: rotate(0deg);
-	}
+  0% {
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
 
-	100% {
-		-moz-transform: rotate(359deg);
-		-webkit-transform: rotate(359deg);
-		-ms-transform: rotate(359deg);
-		transform: rotate(359deg);
-	}
+  100% {
+    -moz-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    -ms-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
 }
 
 @-ms-keyframes spinner {
-	0% {
-		-moz-transform: rotate(0deg);
-		-webkit-transform: rotate(0deg);
-		-ms-transform: rotate(0deg);
-		transform: rotate(0deg);
-	}
+  0% {
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
 
-	100% {
-		-moz-transform: rotate(359deg);
-		-webkit-transform: rotate(359deg);
-		-ms-transform: rotate(359deg);
-		transform: rotate(359deg);
-	}
+  100% {
+    -moz-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    -ms-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
 }
 
 @keyframes spinner {
-	0% {
-		-moz-transform: rotate(0deg);
-		-webkit-transform: rotate(0deg);
-		-ms-transform: rotate(0deg);
-		transform: rotate(0deg);
-	}
+  0% {
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
 
-	100% {
-		-moz-transform: rotate(359deg);
-		-webkit-transform: rotate(359deg);
-		-ms-transform: rotate(359deg);
-		transform: rotate(359deg);
-	}
+  100% {
+    -moz-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    -ms-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
 }
 
 html, body, div, span, applet, object,
@@ -79,47 +79,47 @@ tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;}
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;}
 
 /* Basic */
 
-	@-ms-viewport {
-		width: device-width;
-	}
+  @-ms-viewport {
+    width: device-width;
+  }
 
-	body {
-		-ms-overflow-style: scrollbar;
-	}
+  body {
+    -ms-overflow-style: scrollbar;
+  }
 
-	@media screen and (max-width: 480px) {
+  @media screen and (max-width: 480px) {
 
-		html, body {
-			min-width: 320px;
-		}
+    html, body {
+      min-width: 320px;
+    }
 
-	}
+  }
 
-	html {
-		box-sizing: border-box;
-	}
+  html {
+    box-sizing: border-box;
+  }
 
-	*, *:before, *:after {
-		box-sizing: inherit;
-	}
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
 
 a {
    text-decoration: none;
 }
 
 body {
-	background-color: #FFFFFF;
-	font-family: "Raleway";
-	background: #fff;
+  background-color: #FFFFFF;
+  font-family: "Raleway";
+  background: #fff;
     color: #333;
     font-size: 1.1em;
 }
@@ -127,11 +127,11 @@ body {
 
 
 #header {
-	padding: 0.5em 5em 0em 5em ;
-	text-align: center;
-	font-family: "Raleway";
-	font-weight:  500;
-	font-size: 4em;
+  padding: 0.5em 5em 0em 5em ;
+  text-align: center;
+  font-family: "Raleway";
+  font-weight:  500;
+  font-size: 4em;
 }
 
 #header h1 {
@@ -163,10 +163,10 @@ body {
 
 
 a .logo{
-	left: 0em;
-	top: 1em;
-	position: relative;
-	width: 20em;
+  left: 0em;
+  top: 1em;
+  position: relative;
+  width: 20em;
 }
 
 
@@ -451,7 +451,7 @@ body p {
 
    .logo a img {
 
-   		width: 18em;
+      width: 18em;
    }
 
    .wrap {
@@ -528,7 +528,7 @@ body p {
    }
 
    div .buttons {
-   	margin: auto;
+    margin: auto;
    }
 
 body h2 {
@@ -599,7 +599,7 @@ body p {
       margin-right: 0;
    }
    .logo {
-   		margin:auto;
+      margin:auto;
    }
 
    a .logo{
