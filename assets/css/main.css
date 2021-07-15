@@ -1,6 +1,9 @@
 @import url(font-awesome.min.css);
 @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400";
+@import url('https://fonts.googleapis.com/css?family=Aleo:300,400');
+@import url('https://fonts.googleapis.com/css?family=Lora:300,400');
 @import url(style.css);
+@import url(glightbox.css);
 
 /*
 	Stellar by HTML5 UP
@@ -93,6 +96,8 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+
+
 body {
 	line-height: 1;
 }
@@ -163,11 +168,11 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #935d8c;
+		background-color: ##cccccc;
 		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), linear-gradient(45deg, #121e3a 15%, #2f4d93 85%);
+		background-image: url("images/overlay.png"), linear-gradient(45deg, #efefef 15%, #e6e6e6 85%);
 		
 		/*
 		background-color: #935d8c;
@@ -251,6 +256,7 @@ input, select, textarea {
 
 	p {
 		margin: 0 0 2em 0;
+		font-size: 110%;
 	}
 
 		p.content {
@@ -280,6 +286,7 @@ input, select, textarea {
 	h1 {
 		font-size: 2.5em;
 		line-height: 1.2;
+
 	}
 
 	h2 {
@@ -387,7 +394,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+		color: #000000;
 	}
 
 
@@ -2307,6 +2314,7 @@ input, select, textarea {
 			display: none;
 		}
 
+
 		.icon.major {
 			border: solid 1px;
 			display: inline-block;
@@ -2419,6 +2427,7 @@ input, select, textarea {
 		border: 0;
 		display: inline-block;
 		position: relative;
+		transition: 0.3s ease;
 	}
 
 		.image img {
@@ -2456,6 +2465,17 @@ input, select, textarea {
 				width: 100%;
 			}
 
+		.image.grow:hover {
+			-webkit-transform: scale(1.03);
+        	-ms-transform: scale(1.03);
+        	-moz-transform: scale(1.03);
+       	 	transform: scale(1.03);
+       	 	
+       	 	
+		}
+
+
+
 		.image.main {
 			display: block;
 			margin: 0 0 3em 0;
@@ -2480,12 +2500,17 @@ input, select, textarea {
 
 	ul {
 		list-style: disc;
-		margin: 0 0 2em 0;
+		margin: 0 0 0.3em 0;
 		padding-left: 1em;
 	}
 
 		ul li {
 			padding-left: 0.5em;
+		}
+
+		ul li h3{
+			padding-left: 0em;
+			text-align: center;
 		}
 
 		ul.alt {
@@ -2497,6 +2522,7 @@ input, select, textarea {
 				border-top: solid 1px;
 				padding: 0.5em 0;
 			}
+
 
 				ul.alt li:first-child {
 					border-top: 0;
@@ -2540,7 +2566,7 @@ input, select, textarea {
 	}
 
 	dl dt {
-		color: #ffffff;    
+		color: #000000;    
 	}
 
 /* Actions */
@@ -2557,9 +2583,26 @@ input, select, textarea {
 	}
 
 		ul.actions li {
-			padding: 0 0 0 1em;
+			padding: 0 0 0 3em;
 			vertical-align: middle;
 		}
+
+		@media screen and (max-width: 980px) {
+			ul.actions li {
+			padding: 0 0 0 5.5em;
+			vertical-align: middle;
+			}
+		}
+
+		@media screen and (max-width: 800px) {
+			ul.actions li {
+			padding: 0 0 0 2.7em;
+			vertical-align: middle;
+			}
+		}
+
+
+
 
 		ul.actions.special {
 			-moz-justify-content: center;
@@ -2690,10 +2733,14 @@ input, select, textarea {
 
 	header.major {
 		margin-bottom: 3em;
+
+
 	}
 
 		header.major h2 {
-			font-size: 2em;
+			font-size: 3em;
+
+
 		}
 
 			header.major h2:after {
@@ -2713,6 +2760,7 @@ input, select, textarea {
 		header.major p {
 			font-size: 1.25em;
 			letter-spacing: -0.025em;
+
 		}
 
 		header.major.special {
@@ -2776,7 +2824,7 @@ input, select, textarea {
 		}
 
 		table td {
-			padding: 0.75em 0.75em;
+			padding: 0.75em 0.65em;
 		}
 
 		table th {
@@ -2785,6 +2833,7 @@ input, select, textarea {
 			padding: 0 0.75em 0.75em 0.75em;
 			text-align: left;
 		}
+
 
 		table thead {
 			border-bottom: solid 2px;
@@ -2866,10 +2915,21 @@ input, select, textarea {
 	}
 
 		.features li {
-			width: calc(33.3333333333% - 2em);
-			margin-left: 2em;
-			margin-top: 3em;
+			width: calc(45% - 2em);
+			margin-left: 2.5em;
+			margin-top: 0.5em;
 			padding: 0;
+		}
+
+		.features ul li {
+			width: 100%;
+			margin-left: 0.5em;
+			margin-top: 0.5em;
+			padding: 0;
+		}
+
+		.features li table {
+			text-align: left;
 		}
 
 			.features li:nth-child(1), .features li:nth-child(2), .features li:nth-child(3) {
@@ -2887,7 +2947,7 @@ input, select, textarea {
 			}
 
 				.features li:nth-child(3) {
-					margin-top: 3em;
+					margin-top: 2em;
 				}
 
 		}
@@ -2902,11 +2962,12 @@ input, select, textarea {
 				.features li {
 					width: 100%;
 					margin-left: 0;
-					margin-top: 2em;
+					margin-top: 1em;
+
 				}
 
 					.features li:nth-child(2), .features li:nth-child(3) {
-						margin-top: 2em;
+						margin-top: 1em;
 					}
 
 		}
@@ -3124,7 +3185,7 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		padding: 5em 5em 1em 5em ;
+		padding: 0em 5em 0em 5em ;
 		text-align: center;
 	}
 
@@ -3137,9 +3198,14 @@ input, select, textarea {
 			letter-spacing: -0.025em;
 		}
 
+
+		#header span.logosmall {
+			right: 40em;
+		}
+
 		#header.alt {
-			/*padding: 6em 5em 4em 5em ; with main logo */
-			padding: 0em 5em 4em 5em;
+			/*padding: 7em 5em 4em 5em ; with main logo */
+			padding: 0em 5em 0em 5em;
 		}
 
 			#header.alt h1 {
@@ -3147,34 +3213,32 @@ input, select, textarea {
 			}
 
 			#header.alt > * {
-				-moz-transition: opacity 3s ease;
+				/*-moz-transition: opacity 3s ease;
 				-webkit-transition: opacity 3s ease;
 				-ms-transition: opacity 3s ease;
 				transition: opacity 3s ease;
 				-moz-transition-delay: 0.5s;
 				-webkit-transition-delay: 0.5s;
 				-ms-transition-delay: 0.5s;
-				transition-delay: 0.5s;
+				transition-delay: 0.5s;*/
 				opacity: 1;
 			}
 
 			#header.alt .logo {
-				-moz-transition: opacity 1.25s ease, -moz-transform 0.5s ease;
+				/*-moz-transition: opacity 1.25s ease, -moz-transform 0.5s ease;
 				-webkit-transition: opacity 1.25s ease, -webkit-transform 0.5s ease;
 				-ms-transition: opacity 1.25s ease, -ms-transform 0.5s ease;
 				transition: opacity 1.25s ease, transform 0.5s ease;
 				-moz-transition-delay: 0s;
 				-webkit-transition-delay: 0s;
 				-ms-transition-delay: 0s;
-				transition-delay: 0s;
+				transition-delay: 0s;*/
 				display: block;
-				margin: 0 0 1.5em 0;
+				margin: 1em 0 1.5em 0;
 			}
 			
-			
-
-				#header.alt .logo img {
-					display: block;
+				#header.alt .logo.main img {
+					display: none;
 					margin: 0 auto;
 					max-width: 75%;
 				}
@@ -3182,11 +3246,23 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			#header {
-				padding: 4em 4em 0.1em 4em ;
+				padding: 0em 4em 0em 4em ;
 			}
 
 				#header.alt {
-					padding: 6em 4em 3em 4em ;
+					padding: 0em 4em 0em 4em ;
+				}
+
+					#header.alt .logo img {
+					display: block;
+					margin: 0 auto;
+					max-width: 75%;
+				}
+
+					#header.alt .logo.main img {
+					display: none;
+					margin: 0 auto;
+					max-width: 75%;
 				}
 
 		}
@@ -3194,19 +3270,26 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			#header {
-				padding: 4em 3em 0.1em 3em ;
+				padding: 0em 3em 0.1em 3em ;
 			}
 
 				#header.alt {
-					padding: 5em 3em 2em 3em ;
+					padding: 0em 3em 0em 3em ;
 				}
+
+					#header.alt .logo.main img {
+					display: none;
+					margin: 0 auto;
+					width: 100%;
+				}
+
 
 		}
 
 		@media screen and (max-width: 736px) {
 
 			#header {
-				padding: 3em 2em 0.1em 2em ;
+				padding: 0em 2em 0em 2em ;
 			}
 
 				#header p {
@@ -3219,23 +3302,29 @@ input, select, textarea {
 					}
 
 				#header.alt {
-					padding: 4em 2em 1em 2em ;
+					padding: 0em 2em 0em 2em ;
 				}
 
 					#header.alt h1 {
 						font-size: 2.5em;
 					}
 
+					#header.alt .logo.main img {
+					display: block;
+					margin: 0 auto;
+					max-width: 100%;
+				}
+
 		}
 
 		@media screen and (max-width: 480px) {
 
 			#header {
-				padding: 3em 1.5em 0.1em 1.5em ;
+				padding: 1.1em 1em 0.1em 1em ;
 			}
 
 				#header.alt {
-					padding: 4em 1.5em 1em 1.5em ;
+					padding: 1.1em 1em 1em 1em ;
 				}
 
 		}
@@ -3243,11 +3332,11 @@ input, select, textarea {
 		@media screen and (max-width: 360px) {
 
 			#header {
-				padding: 2.5em 1em 0.1em 1em ;
+				padding: 1.1em 1em 0.1em 1em ;
 			}
 
 				#header.alt {
-					padding: 3.5em 1em 0.5em 1em ;
+					padding: 1.1em 1em 0.5em 1em ;
 				}
 
 		}
@@ -3256,7 +3345,7 @@ input, select, textarea {
 			opacity: 0;
 		}
 
-		body.is-preload #header.alt .logo {
+		body.is-preload #header.alt .logo {   /*logosmall*/
 			-moz-transform: scale(0.8) /*rotate(-30deg)*/;
 			-webkit-transform: scale(0.8) /*rotate(-30deg)*/;
 			-ms-transform: scale(0.8) /*rotate(-30deg)*/;
@@ -3294,7 +3383,7 @@ input, select, textarea {
 			-ms-transition-delay: 0s;
 			transition-delay: 0s;
 
-			display: block	;
+			display: block;
 			margin: 0 0 0 0;
 			
 			opacity: 1;
@@ -3342,7 +3431,7 @@ input, select, textarea {
 			padding: 0;
 			list-style: none;
 			position: relative;
-			right:2.5em;
+			right:0.5em;
 			
 		}
 
@@ -3371,11 +3460,15 @@ input, select, textarea {
 					box-shadow: inset 0 0 0 1px transparent;
 				}
 
-					#nav ul li a:hover {
-						background-color: rgba(222, 222, 222, 0.25);
+
+
+
+					#nav ul li.navbutton a:hover {
+						background-color: rgba(222, 222, 222, 0.35);
 					}
 
-					#nav ul li a.active {
+
+					#nav ul li.navbutton a.active {
 						background-color: #ffffff;
 						box-shadow: none;
 					}
@@ -3383,7 +3476,7 @@ input, select, textarea {
 		#nav.alt {
 			position: fixed;
 			top: 0;
-			padding: 0.2em 1em;
+			padding: 0.5em 1em;
 			background-color: rgba(247, 247, 247, 0.95);
 			border-top-left-radius: 0;
 			border-top-right-radius: 0;
@@ -3394,7 +3487,6 @@ input, select, textarea {
 				margin: 0 0.175em;
 			}
 			
-
 				#nav.alt ul li a {
 					font-size: 0.9em;
 				}
@@ -3428,7 +3520,7 @@ input, select, textarea {
 		}
 
 		#main strong, #main b {
-			color: #636363;
+			color: #008acc;
 		}
 
 		#main h1, #main h2, #main h3, #main h4, #main h5, #main h6 {
@@ -3625,11 +3717,13 @@ input, select, textarea {
 		}
 
 		#main header.major h2:after {
-			background-color: #dddddd;
+			/*background-color: #dddddd;*/
+			
 			background-image: -moz-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
 			background-image: -webkit-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
 			background-image: -ms-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
 			background-image: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+			
 		}
 
 		#main table tbody tr {
@@ -3799,7 +3893,7 @@ input, select, textarea {
 				background-size: cover;
 				content: '';
 				display: block;
-				height: 60%;
+				height: 100%; /*shadow height*/
 				left: 0;
 				position: absolute;
 				top: 0;
@@ -3812,7 +3906,7 @@ input, select, textarea {
 				background-repeat: no-repeat;
 				background-size: cover;
 				border: 0;
-				height: 60%;
+				height: 100%; /*thumbnail height*/
 				left: 0;
 				position: absolute;
 				top: 0;
@@ -3821,13 +3915,27 @@ input, select, textarea {
 
 			#gallery .thumb > h2 {
 				pointer-events: none;
-				bottom: 11.3em;
-				font-size: 0.8em;
-				left: 2.1875em;
+				bottom: 1.1em;
+				font-size: 1em;
+				left: 1em;
 				margin: 0;
 				position: absolute;
 				z-index: 1;
 			}
+
+			#gallery .thumb > h2 span {
+				color: white;
+				font: bold 18px/25px Helvetica, sans-serif;
+				letter-spacing: -1px;
+				background: rgb(0,0,0);
+				background: rgba(0,0,0,0.7);
+				padding: 0.14em;
+			}
+
+			/*#gallery .thumb > h2 span.spacer {
+				padding: 0.14em;
+			}*/
+
 
 			#gallery .thumb > p {
 				display: none;
@@ -3880,7 +3988,7 @@ input, select, textarea {
 			-ms-transition-delay: 2.525s;
 			transition-delay: 2.525s;
 			height: calc(40vh - 2em);
-			min-height: 20em;
+			min-height: 16em;
 			width: 25%;
 		}
 
@@ -3975,8 +4083,8 @@ input, select, textarea {
 				-webkit-transition-delay: 2.075s;
 				-ms-transition-delay: 2.075s;
 				transition-delay: 2.075s;
-				height: calc(40vh - 2em);
-				min-height: 20em;
+				height: calc(1em); /*thumb box height*/
+				min-height: 12em;
 				width: 33.3333333333%;
 			}
 
@@ -4052,9 +4160,9 @@ input, select, textarea {
 				-webkit-transition-delay: 1.625s;
 				-ms-transition-delay: 1.625s;
 				transition-delay: 1.625s;
-				height: calc(40vh - 2em);
-				min-height: 20em;
-				width: 50%;
+				height: calc(20vh - 2em);
+				min-height: 12em;
+				width: 33.33333%;
 			}
 
 				#gallery .thumb:nth-child(1) {
@@ -4109,8 +4217,8 @@ input, select, textarea {
 				-ms-transition-delay: 2.075s;
 				transition-delay: 2.075s;
 				height: calc(28.5714285714vh - 1.3333333333em);
-				min-height: 18em;
-				width: 50%;
+				min-height: 12em;
+				width: 33.333%;
 			}
 
 				#gallery .thumb:nth-child(1) {
@@ -4186,7 +4294,7 @@ input, select, textarea {
 				-ms-transition-delay: 1.175s;
 				transition-delay: 1.175s;
 				height: calc(40vh - 2em);
-				min-height: 18em;
+				min-height: 12em;
 				width: 100%;
 			}
 
@@ -4312,6 +4420,7 @@ input, select, textarea {
 
 			.poptrox-popup .caption h2, .poptrox-popup .caption h3, .poptrox-popup .caption h4, .poptrox-popup .caption h5, .poptrox-popup .caption h6 {
 				margin: 0 0 0.5em 0;
+				color: #ffffff;
 			}
 
 			.poptrox-popup .caption p {
@@ -4409,6 +4518,7 @@ input, select, textarea {
 		padding: 5em 5em 3em 5em ;
 		width: calc(100% + 2em);
 		margin: 0 0 3em -2em;
+		color: #000000;
 	}
 
 		#footer > * {
@@ -4421,7 +4531,7 @@ input, select, textarea {
 			margin: 2.5em 0 2em 0;
 			font-size: 0.8em;
 			text-align: center;
-			color: #2a4584;
+			color: #cccccc;
 		}
 
 		@media screen and (max-width: 1280px) {
@@ -4511,6 +4621,7 @@ input, select, textarea {
 		transition: -moz-filter 0.5s ease, -webkit-filter 0.5s ease, -ms-filter 0.5s ease, filter 0.5s ease;
 		position: relative;
 		width: 64em;
+		max-width: calc(100% - 4em);
 		margin: 0 auto;
 	}
 
